@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		381831AA22D4C865005A1A63 /* ToDoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 381831A922D4C865005A1A63 /* ToDoListViewController.xib */; };
+		381831B022D4DC1D005A1A63 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 381831AE22D4DC16005A1A63 /* RealmSwift.framework */; };
+		381831B122D4DC1D005A1A63 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 381831AE22D4DC16005A1A63 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		381831B422D4DD38005A1A63 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 381831B222D4DD34005A1A63 /* Realm.framework */; };
+		381831B522D4DD38005A1A63 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 381831B222D4DD34005A1A63 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		384AF46922D4A25000F3933F /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384AF46222D4A1C100F3933F /* Result.framework */; };
 		384AF46A22D4A25000F3933F /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 384AF46222D4A1C100F3933F /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		384AF46C22D4A25800F3933F /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E4FBCC22D0BE2100C925CB /* ReactiveSwift.framework */; };
@@ -31,7 +35,9 @@
 			files = (
 				384AF46A22D4A25000F3933F /* Result.framework in Embed Frameworks */,
 				384AF46F22D4A25B00F3933F /* ReactiveCocoa.framework in Embed Frameworks */,
+				381831B122D4DC1D005A1A63 /* RealmSwift.framework in Embed Frameworks */,
 				384AF46D22D4A25800F3933F /* ReactiveSwift.framework in Embed Frameworks */,
+				381831B522D4DD38005A1A63 /* Realm.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,6 +46,8 @@
 
 /* Begin PBXFileReference section */
 		381831A922D4C865005A1A63 /* ToDoListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoListViewController.xib; sourceTree = "<group>"; };
+		381831AE22D4DC16005A1A63 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		381831B222D4DD34005A1A63 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		384AF45F22D4A0E900F3933F /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		384AF46222D4A1C100F3933F /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		384AF47022D4B3D600F3933F /* ToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
@@ -58,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				381831B422D4DD38005A1A63 /* Realm.framework in Frameworks */,
+				381831B022D4DC1D005A1A63 /* RealmSwift.framework in Frameworks */,
 				384AF46E22D4A25B00F3933F /* ReactiveCocoa.framework in Frameworks */,
 				384AF46C22D4A25800F3933F /* ReactiveSwift.framework in Frameworks */,
 				384AF46922D4A25000F3933F /* Result.framework in Frameworks */,
@@ -93,6 +103,8 @@
 		384AF46522D4A1FF00F3933F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				381831B222D4DD34005A1A63 /* Realm.framework */,
+				381831AE22D4DC16005A1A63 /* RealmSwift.framework */,
 				38E4FBCC22D0BE2100C925CB /* ReactiveSwift.framework */,
 				384AF46222D4A1C100F3933F /* Result.framework */,
 				384AF45F22D4A0E900F3933F /* ReactiveCocoa.framework */,
@@ -222,6 +234,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/ReactiveSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
 			);
 			outputFileListPaths = (
 			);

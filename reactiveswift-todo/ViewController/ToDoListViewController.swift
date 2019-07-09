@@ -9,7 +9,7 @@
 import UIKit
 import ReactiveSwift
 
-final class ViewController: UIViewController {
+final class ToDoListViewController: UIViewController {
     
     @IBOutlet private weak var tableView: UITableView! {
         didSet {
@@ -27,7 +27,7 @@ final class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UITableViewDataSource {
+extension ToDoListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
         return 10 // TODO: fix

@@ -13,6 +13,7 @@ protocol ToDoRepositoryProtocol {
     // TODO: what to pass as arguments
     func save(title: String, content: String, isCompleted: Bool)
     func fetch() -> [ToDo]
+    // TODO: need to implement "edit, delete, find"
 }
 
 struct ToDoRepository: ToDoRepositoryProtocol {

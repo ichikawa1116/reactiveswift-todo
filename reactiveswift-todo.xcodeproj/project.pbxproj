@@ -16,6 +16,7 @@
 		381831BB22D4E5A7005A1A63 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381831BA22D4E5A7005A1A63 /* ToDo.swift */; };
 		381831BE22D4E8A2005A1A63 /* ToDoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381831BD22D4E8A2005A1A63 /* ToDoEntity.swift */; };
 		381831C122D4E97C005A1A63 /* ToDoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381831C022D4E97C005A1A63 /* ToDoRepository.swift */; };
+		381831C422D4FB16005A1A63 /* ToDoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381831C322D4FB15005A1A63 /* ToDoViewModel.swift */; };
 		384AF46922D4A25000F3933F /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384AF46222D4A1C100F3933F /* Result.framework */; };
 		384AF46A22D4A25000F3933F /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 384AF46222D4A1C100F3933F /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		384AF46C22D4A25800F3933F /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E4FBCC22D0BE2100C925CB /* ReactiveSwift.framework */; };
@@ -56,6 +57,7 @@
 		381831BA22D4E5A7005A1A63 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		381831BD22D4E8A2005A1A63 /* ToDoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoEntity.swift; sourceTree = "<group>"; };
 		381831C022D4E97C005A1A63 /* ToDoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoRepository.swift; sourceTree = "<group>"; };
+		381831C322D4FB15005A1A63 /* ToDoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewModel.swift; sourceTree = "<group>"; };
 		384AF45F22D4A0E900F3933F /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		384AF46222D4A1C100F3933F /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		384AF47022D4B3D600F3933F /* ToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		381831AB22D4CAF1005A1A63 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				381831C322D4FB15005A1A63 /* ToDoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				381831C422D4FB16005A1A63 /* ToDoViewModel.swift in Sources */,
 				381831BE22D4E8A2005A1A63 /* ToDoEntity.swift in Sources */,
 				38E4FBBD22D0ABBA00C925CB /* ToDoListViewController.swift in Sources */,
 				381831B822D4E1FF005A1A63 /* RealmHelper.swift in Sources */,

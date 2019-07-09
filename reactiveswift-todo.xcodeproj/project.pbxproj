@@ -76,6 +76,20 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		381831AB22D4CAF1005A1A63 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		381831AC22D4CAFB005A1A63 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
 		384AF46522D4A1FF00F3933F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +129,8 @@
 		38E4FBB922D0ABBA00C925CB /* reactiveswift-todo */ = {
 			isa = PBXGroup;
 			children = (
+				381831AC22D4CAFB005A1A63 /* Wireframe */,
+				381831AB22D4CAF1005A1A63 /* ViewModel */,
 				381831A322D4BCB0005A1A63 /* ViewController */,
 				384AF47622D4B4F700F3933F /* View */,
 				38E4FBBA22D0ABBA00C925CB /* AppDelegate.swift */,

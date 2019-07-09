@@ -21,10 +21,10 @@ final class RealmHelper <T: RealmSwift.Object> {
         }
     }
     
-    /// プライマリキーを取得
+    /// get a new primary key
     func newId() -> Int? {
         guard let key = T.primaryKey() else {
-            //primaryKey未設定
+            // primary key is unset
             return nil
         }
         
@@ -36,13 +36,11 @@ final class RealmHelper <T: RealmSwift.Object> {
             fatalError(error.localizedDescription)
         }
     }
-    
-    /// 全件取得
+
     func findAll() -> Results<T> {
         return realm.objects(T.self)
     }
-    
-    /// レコード追加
+
     func add(data: T) {
         do {
             try realm.write {

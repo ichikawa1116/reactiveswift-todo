@@ -77,13 +77,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		381831A322D4BCB0005A1A63 /* ViewController */ = {
+		381831A322D4BCB0005A1A63 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				38E4FBBC22D0ABBA00C925CB /* ToDoListViewController.swift */,
 				381831A922D4C865005A1A63 /* ToDoListViewController.xib */,
 			);
-			path = ViewController;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		381831AB22D4CAF1005A1A63 /* ViewModel */ = {
@@ -143,7 +143,7 @@
 			children = (
 				381831AC22D4CAFB005A1A63 /* Wireframe */,
 				381831AB22D4CAF1005A1A63 /* ViewModel */,
-				381831A322D4BCB0005A1A63 /* ViewController */,
+				381831A322D4BCB0005A1A63 /* Controller */,
 				384AF47622D4B4F700F3933F /* View */,
 				38E4FBBA22D0ABBA00C925CB /* AppDelegate.swift */,
 				38E4FBC122D0ABBA00C925CB /* Assets.xcassets */,

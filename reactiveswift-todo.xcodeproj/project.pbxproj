@@ -13,6 +13,9 @@
 		381831B422D4DD38005A1A63 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 381831B222D4DD34005A1A63 /* Realm.framework */; };
 		381831B522D4DD38005A1A63 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 381831B222D4DD34005A1A63 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		381831B822D4E1FF005A1A63 /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381831B722D4E1FF005A1A63 /* RealmHelper.swift */; };
+		381831BB22D4E5A7005A1A63 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381831BA22D4E5A7005A1A63 /* Todo.swift */; };
+		381831BE22D4E8A2005A1A63 /* TodoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381831BD22D4E8A2005A1A63 /* TodoEntity.swift */; };
+		381831C122D4E97C005A1A63 /* ToDoDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381831C022D4E97C005A1A63 /* ToDoDao.swift */; };
 		384AF46922D4A25000F3933F /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384AF46222D4A1C100F3933F /* Result.framework */; };
 		384AF46A22D4A25000F3933F /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 384AF46222D4A1C100F3933F /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		384AF46C22D4A25800F3933F /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E4FBCC22D0BE2100C925CB /* ReactiveSwift.framework */; };
@@ -50,6 +53,9 @@
 		381831AE22D4DC16005A1A63 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		381831B222D4DD34005A1A63 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		381831B722D4E1FF005A1A63 /* RealmHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
+		381831BA22D4E5A7005A1A63 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		381831BD22D4E8A2005A1A63 /* TodoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoEntity.swift; sourceTree = "<group>"; };
+		381831C022D4E97C005A1A63 /* ToDoDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoDao.swift; sourceTree = "<group>"; };
 		384AF45F22D4A0E900F3933F /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		384AF46222D4A1C100F3933F /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		384AF47022D4B3D600F3933F /* ToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
@@ -105,9 +111,20 @@
 		381831B622D4E1D1005A1A63 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				381831BF22D4E94C005A1A63 /* Todo */,
 				381831B722D4E1FF005A1A63 /* RealmHelper.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		381831BF22D4E94C005A1A63 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				381831BD22D4E8A2005A1A63 /* TodoEntity.swift */,
+				381831BA22D4E5A7005A1A63 /* Todo.swift */,
+				381831C022D4E97C005A1A63 /* ToDoDao.swift */,
+			);
+			path = Todo;
 			sourceTree = "<group>";
 		};
 		384AF46522D4A1FF00F3933F /* Frameworks */ = {
@@ -263,10 +280,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				381831BE22D4E8A2005A1A63 /* TodoEntity.swift in Sources */,
 				38E4FBBD22D0ABBA00C925CB /* ToDoListViewController.swift in Sources */,
 				381831B822D4E1FF005A1A63 /* RealmHelper.swift in Sources */,
 				384AF47222D4B3D600F3933F /* ToDoCell.swift in Sources */,
+				381831C122D4E97C005A1A63 /* ToDoDao.swift in Sources */,
 				38E4FBBB22D0ABBA00C925CB /* AppDelegate.swift in Sources */,
+				381831BB22D4E5A7005A1A63 /* Todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,6 +12,7 @@ import RealmSwift
 protocol ToDoRepositoryProtocol {
     // TODO: what to pass as arguments
     func save(title: String, content: String, isCompleted: Bool)
+    func fetch() -> [ToDo]
 }
 
 struct ToDoRepository: ToDoRepositoryProtocol {
@@ -25,5 +26,10 @@ struct ToDoRepository: ToDoRepositoryProtocol {
                           updateDate: Date()).asRealm()
         
         return realm.add(data: object)
+    }
+    
+    func fetch() -> [ToDo] {
+        return realm.findAll()
+            .map { $0.asDomain() }
     }
 }

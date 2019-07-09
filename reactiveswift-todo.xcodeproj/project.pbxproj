@@ -67,6 +67,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		381831A322D4BCB0005A1A63 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				38E4FBBC22D0ABBA00C925CB /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		384AF46522D4A1FF00F3933F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,9 +114,9 @@
 		38E4FBB922D0ABBA00C925CB /* reactiveswift-todo */ = {
 			isa = PBXGroup;
 			children = (
+				381831A322D4BCB0005A1A63 /* ViewController */,
 				384AF47622D4B4F700F3933F /* View */,
 				38E4FBBA22D0ABBA00C925CB /* AppDelegate.swift */,
-				38E4FBBC22D0ABBA00C925CB /* ViewController.swift */,
 				38E4FBBE22D0ABBA00C925CB /* Main.storyboard */,
 				38E4FBC122D0ABBA00C925CB /* Assets.xcassets */,
 				38E4FBC322D0ABBA00C925CB /* LaunchScreen.storyboard */,

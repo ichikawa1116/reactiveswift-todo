@@ -9,15 +9,23 @@
 import Foundation
 import RealmSwift
 
-class TodoEntity: Object {
+class ToDoEntity: Object {
     
     @objc dynamic var todoID = 0
     @objc dynamic var title = ""
     @objc dynamic var contents = ""
-    @objc dynamic var completed = false
+    @objc dynamic var isCompleted = false
     @objc dynamic var updateDate: Date?
     
     override static func primaryKey() -> String? {
         return "todoID"
+    }
+    
+    func asDomain() -> ToDo {
+        return ToDo(todoID: todoID,
+                    title: title,
+                    contents: contents,
+                    isCompleted: isCompleted,
+                    updateDate: updateDate)
     }
 }

@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import RealmSwift
 
-public struct Todo {
+public struct ToDo {
     
     public let todoID: Int
     public let title: String
@@ -27,5 +28,15 @@ public struct Todo {
         self.contents = contents
         self.isCompleted = isCompleted
         self.updateDate = updateDate
+    }
+    
+    func asRealm() -> ToDoEntity {
+        return ToDoEntity.build { object in
+            object.todoID = todoID
+            object.title = title
+            object.contents = contents
+            object.isCompleted = isCompleted
+            object.updateDate = updateDate
+        }
     }
 }

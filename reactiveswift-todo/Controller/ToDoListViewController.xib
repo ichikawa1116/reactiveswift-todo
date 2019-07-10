@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ToDoListViewController" customModule="reactiveswift_todo" customModuleProvider="target">
             <connections>
+                <outlet property="newBarButton" destination="e1l-yi-es2" id="taX-VH-Glq"/>
                 <outlet property="tableView" destination="WGv-t8-ThS" id="4ug-ai-kus"/>
                 <outlet property="view" destination="Pln-po-oeI" id="qmE-Ai-yRC"/>
             </connections>

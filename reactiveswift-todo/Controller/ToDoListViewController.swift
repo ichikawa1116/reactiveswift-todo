@@ -27,6 +27,7 @@ final class ToDoListViewController: UIViewController {
         }
     }
     
+    @IBOutlet weak var newBarButton: UIBarButtonItem!
     private let viewModel: ToDoViewModel
     
     required init?(coder aDecoder: NSCoder) {

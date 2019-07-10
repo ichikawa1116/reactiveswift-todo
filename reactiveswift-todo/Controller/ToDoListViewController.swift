@@ -35,6 +35,12 @@ final class ToDoListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        viewModel.todos.signal.observeValues { [weak self] _ in
+            self?.tableView.reloadData()
+        }
+        // TODO: hide this operator from VC
+        viewModel.fetchAll()
     }
 }
 
@@ -48,6 +54,7 @@ extension ToDoListViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(
             withIdentifier: "ToDoCell",
             for: indexPath) as! ToDoCell
+        cell.setup(todo: viewModel.item(at: indexPath))
         return cell
     }
 }

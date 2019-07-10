@@ -10,4 +10,8 @@ import UIKit
 
 final class ToDoCell: UITableViewCell {
     @IBOutlet weak private var titleLabel: UILabel!
+    
+    func setup(todo: ToDo) {
+        titleLabel.text = todo.title
+    }
 }

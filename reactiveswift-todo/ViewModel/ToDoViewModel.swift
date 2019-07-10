@@ -18,7 +18,8 @@ final class ToDoViewModel {
     init() {
     }
 
-    private func fetchAll(){
+    // TODO: want to make this method private
+    func fetchAll(){
         todos.value = repository.fetch()
     }
 }

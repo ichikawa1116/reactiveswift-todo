@@ -22,19 +22,29 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WGv-t8-ThS">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="803"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Djt-Pb-H63">
+                    <rect key="frame" x="0.0" y="847" width="414" height="49"/>
+                    <items>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="31D-Kg-pSe"/>
+                        <barButtonItem systemItem="add" id="e1l-yi-es2"/>
+                    </items>
+                </toolbar>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="Djt-Pb-H63" secondAttribute="bottom" id="Mp9-pX-4gz"/>
+                <constraint firstItem="Djt-Pb-H63" firstAttribute="leading" secondItem="lvG-OF-6dp" secondAttribute="leading" id="OXW-iL-ZGF"/>
                 <constraint firstItem="WGv-t8-ThS" firstAttribute="top" secondItem="lvG-OF-6dp" secondAttribute="top" id="Opn-Qi-aIz"/>
                 <constraint firstItem="WGv-t8-ThS" firstAttribute="leading" secondItem="lvG-OF-6dp" secondAttribute="leading" id="Rzj-xh-pdI"/>
+                <constraint firstItem="Djt-Pb-H63" firstAttribute="top" secondItem="WGv-t8-ThS" secondAttribute="bottom" id="myC-tS-cM2"/>
+                <constraint firstItem="Djt-Pb-H63" firstAttribute="trailing" secondItem="lvG-OF-6dp" secondAttribute="trailing" id="nFZ-RC-WKo"/>
                 <constraint firstItem="lvG-OF-6dp" firstAttribute="trailing" secondItem="WGv-t8-ThS" secondAttribute="trailing" id="rzh-E8-0wW"/>
-                <constraint firstItem="lvG-OF-6dp" firstAttribute="bottom" secondItem="WGv-t8-ThS" secondAttribute="bottom" id="vb2-DF-pfW"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="lvG-OF-6dp"/>
-            <point key="canvasLocation" x="-126" y="-15"/>
+            <point key="canvasLocation" x="-126.08695652173914" y="-15.401785714285714"/>
         </view>
     </objects>
 </document>

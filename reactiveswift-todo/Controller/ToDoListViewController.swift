@@ -19,6 +19,11 @@ final class ToDoListViewController: UIViewController {
                     nibName: "ToDoCell",
                     bundle: nil),
                 forCellReuseIdentifier: "ToDoCell")
+            // to remove extra separator lines
+            tableView.tableFooterView = UIView()
+            // to remove separator insets
+            tableView.separatorInset = UIEdgeInsets.zero
+            tableView.separatorStyle = .singleLine
         }
     }
     
